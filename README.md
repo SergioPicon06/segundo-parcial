@@ -1,0 +1,1 @@
+#este es el autor de la pagina: https://www.figma.com/design/JZaBE7DwOdrjqIGF2PQRrt/Travel-App--Community-?node-id=0-1&p=f&t=UBp4QiqYzqeZ0gYH-0
