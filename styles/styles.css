@@ -14,10 +14,12 @@ body {
 .bg-image {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: 0;
+  left: auto;
+  width: 65%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   z-index: -1;
 }
 .left-panel {
@@ -26,12 +28,18 @@ body {
   left: 0;
   width: 45%;
   height: 100%;
-  background: rgba(222, 171, 115, 0.9);
+
+  background-color: #d2995a;
+
+  background-image: url('data:image/svg+xml,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noise"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noise)" opacity="0.15"/%3E%3C/svg%3E');
+
   border-radius: 0 250px 250px 0;
   padding: 50px;
   display: flex;
   flex-direction: column;
-  box-shadow: 20px 0 50px rgba(0, 0, 0, 0.1);
+
+  box-shadow: 15px 0 40px rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 .header {
   width: 100%;
@@ -80,4 +88,39 @@ body {
   line-height: 1.1;
   font-weight: 700;
   color: white;
+}
+.popular-section h3 {
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  color: white;
+}
+.cards {
+  display: flex;
+  gap: 20px;
+}
+.card {
+  background: white;
+  color: black;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 150px;
+}
+.card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+.card-info {
+  padding: 12px;
+}
+.card-info h4 {
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+.card-info p {
+  font-size: 0.75rem;
+  color: #888;
 }
